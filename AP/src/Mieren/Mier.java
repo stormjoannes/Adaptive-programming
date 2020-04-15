@@ -6,4 +6,5 @@ public class Mier {
     public Mier(String kl) {
         kolonie = kl;
     }
+    public String kolonie() {return kolonie;}
 }
