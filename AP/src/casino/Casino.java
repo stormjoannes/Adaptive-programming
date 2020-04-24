@@ -4,7 +4,6 @@ public class Casino {
     private String Name;
     private Goktafel Goktafel;
     private Gokautomaat Gokautomaat;
-//    private Medewerker Medewerker;
     private Klant Klant;
 
     public Casino(String nm) {
@@ -19,9 +18,6 @@ public class Casino {
         Gokautomaat = Gkau;
     }
 
-//    public void setMedewerker(Medewerker Mw) {
-//        Medewerker = Mw;
-//    }
 
     public void setKlant(Klant Kl) {
         Klant = Kl;
@@ -42,7 +38,7 @@ public class Casino {
 
     public String Gokautomaat() {
         if (Klant.toString().contains(", Niet toegelaten vanwegen minderjarige leeftijd!")) {
-            return "Casino: " + Name + "\n \t" + Klant;
+            return "Casino: " + Name + "\n \t" + Klant ;
         } else {
             return "Casino: " + Name + "\n \t" + Gokautomaat + "\n \t" + Klant + "\n";
         }

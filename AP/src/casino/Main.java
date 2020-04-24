@@ -43,7 +43,7 @@ public class Main {
         System.out.println(Cs1.Goktafel());
 
 
-        Klant kl4 = new Klant("Brandon", 21);
+        Klant kl4 = new Klant("Brandon", 16);
         Pas p4 = new Pas(166);
         kl4.setPas(p4);
 

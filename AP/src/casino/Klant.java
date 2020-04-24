@@ -22,7 +22,7 @@ public class Klant {
         if (Leeftijd >= 18) {
             return "Klant: " + Naam + " met leeftijd " + Leeftijd + "\n\t\t" + Pas;
         } else {
-            return "Klant: " + Naam + " met leeftijd " + Leeftijd + ", Niet toegelaten vanwegen minderjarige leeftijd!";
+            return "Klant: " + Naam + " met leeftijd " + Leeftijd + ", Niet toegelaten vanwegen minderjarige leeftijd!\n";
         }
     }
 }
