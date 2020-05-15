@@ -55,11 +55,11 @@ public class Node {
 
         if (!Current.contains("eind")) {
             if (random <= 0.5) {
-                Node nxt = Follows_2.get(0);
-                Follows_2.get(0).getFollow_2(nxt, done, str_gedaan);
+                Node nxt = Follows.get(0);
+                Follows.get(0).getFollow_2(nxt, done, str_gedaan);
             } else {
-                Node nxt = Follows_2.get(1);
-                Follows_2.get(1).getFollow_2(nxt, done, str_gedaan);
+                Node nxt = Follows.get(1);
+                Follows.get(1).getFollow_2(nxt, done, str_gedaan);
             }
         } else {
             return done;
@@ -72,7 +72,4 @@ public class Node {
         return str_gedaan;
     }
 
-    public void setFollow_2(Node val_nd_2){
-        Follows_2.add(val_nd_2);
-    }
 }

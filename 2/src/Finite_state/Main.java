@@ -46,20 +46,20 @@ public class  Main {
         Node e5 = new Node("eind-5");
         Node e6 = new Node("eind-6");
 
-        g0.setFollow_2(g1);
-        g0.setFollow_2(g2);
-        g1.setFollow_2(g3);
-        g1.setFollow_2(g4);
-        g2.setFollow_2(g5);
-        g2.setFollow_2(g6);
-        g3.setFollow_2(g1);
-        g3.setFollow_2(e1);
-        g4.setFollow_2(e2);
-        g4.setFollow_2(e3);
-        g5.setFollow_2(e4);
-        g5.setFollow_2(e5);
-        g6.setFollow_2(e2);
-        g6.setFollow_2(e6);
+        g0.setFollow(g1);
+        g0.setFollow(g2);
+        g1.setFollow(g3);
+        g1.setFollow(g4);
+        g2.setFollow(g5);
+        g2.setFollow(g6);
+        g3.setFollow(g1);
+        g3.setFollow(e1);
+        g4.setFollow(e2);
+        g4.setFollow(e3);
+        g5.setFollow(e4);
+        g5.setFollow(e5);
+        g6.setFollow(e2);
+        g6.setFollow(e6);
 
 
 //        g0.getFollow(g0);
