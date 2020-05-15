@@ -21,10 +21,10 @@ public class  Main {
         s3.setFollow(s0);
 
         //input here
-        ArrayList<Node> ToDo = new ArrayList<>();
-        ToDo.add(s2);
-        ToDo.add(s1);
-        ToDo.add(s1);
+        ArrayList<Integer> ToDo = new ArrayList<>();
+        ToDo.add(1);
+        ToDo.add(0);
+        ToDo.add(1);
         //till here
 
         System.out.println("A: " + s0.getFollow(s0, ToDo));
