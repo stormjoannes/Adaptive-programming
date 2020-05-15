@@ -51,6 +51,7 @@ public class Node {
         Follows.add(val_nd);
     }
 
+
     //in deze methode wordt er gezorgd dat het goede pad wordt gevold en alles goed aangepast word.
     public ArrayList<Node> getFollow_2(Node Now, ArrayList<Node> done, ArrayList<String> str_gedaan) {
         done.add(Now);

@@ -1,5 +1,6 @@
-package Finite_state;
+package Finite_state.tests;
 
+import Finite_state.Node;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
