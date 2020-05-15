@@ -21,15 +21,15 @@ public class Main {
         Fm2b.Node e5 = new Fm2b.Node("eind-5");
         Fm2b.Node e6 = new Fm2b.Node("eind-6");
 
-        g0.setFollow(g1, g2);
-        g1.setFollow(g3, g4);
-        g2.setFollow(g5, g6);
-        g3.setFollow(g1, e1);
-        g4.setFollow(e2, e3);
-        g5.setFollow(e4, e5);
-        g6.setFollow(e2, e6);
+        g0.setFollow_2(g1, g2);
+        g1.setFollow_2(g3, g4);
+        g2.setFollow_2(g5, g6);
+        g3.setFollow_2(g1, e1);
+        g4.setFollow_2(e2, e3);
+        g5.setFollow_2(e4, e5);
+        g6.setFollow_2(e2, e6);
 
 //        g0.getFollow(g0);
-        System.out.println(g0.getFollow(g0));
+        System.out.println(g0.getFollow_2(g0));
     }
 }

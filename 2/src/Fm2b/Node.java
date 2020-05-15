@@ -4,29 +4,29 @@ import java.util.ArrayList;
 
 public class Node {
 
-    private String Current;
-    private Node FollowA;
-    private Node FollowB;
-    private ArrayList<Node> done = new ArrayList<>();
-    private ArrayList<Node> Follows = new ArrayList<>();
+    private String crt;
+    private Node FowA;
+    private Node FowB;
+    private ArrayList<Node> done_2 = new ArrayList<>();
+    private ArrayList<Node> Follows_2 = new ArrayList<>();
     private ArrayList<String> str_gedaan = new ArrayList<>();
 
     public Node(String cr) {
-        this.Current = cr;
+        this.crt = cr;
     }
 
-    public ArrayList<Node> getFollow(Node Now, ArrayList<Node> done, ArrayList<String> str_gedaan) {
+    public ArrayList<Node> getFollow_2(Node Now, ArrayList<Node> done, ArrayList<String> str_gedaan) {
         Double random = Math.random();
         done.add(Now);
-        str_gedaan.add(Current);
+        str_gedaan.add(crt);
 
-        if (!Current.contains("eind")) {
+        if (!crt.contains("eind")) {
             if (random <= 0.5) {
-                Node nxt = Follows.get(0);
-                Follows.get(0).getFollow(nxt, done, str_gedaan);
+                Node nxt = Follows_2.get(0);
+                Follows_2.get(0).getFollow_2(nxt, done, str_gedaan);
             } else {
-                Node nxt = Follows.get(1);
-                Follows.get(1).getFollow(nxt, done, str_gedaan);
+                Node nxt = Follows_2.get(1);
+                Follows_2.get(1).getFollow_2(nxt, done, str_gedaan);
             }
         } else {
             return done;
@@ -34,15 +34,15 @@ public class Node {
         return done;
     }
 
-    public ArrayList<String> getFollow(Node Now) {
-        getFollow(Now, done, str_gedaan);
+    public ArrayList<String> getFollow_2(Node Now) {
+        getFollow_2(Now, done_2, str_gedaan);
         return str_gedaan;
     }
 
-    public void setFollow(Node flwA, Node flwB){
-        this.FollowA = flwA;
-        this.FollowB = flwB;
-        Follows.add(FollowA);
-        Follows.add(FollowB);
+    public void setFollow_2(Node flwA, Node flwB){
+        this.FowA = flwA;
+        this.FowB = flwB;
+        Follows_2.add(FowA);
+        Follows_2.add(FowB);
     }
 }
