@@ -101,8 +101,8 @@ class NodeTest {
         g2.setFollow(e2);
 
         ArrayList<String> need = g0.getFollow_2(g0);
-//        System.out.println(need.get(need.size() - 1));
         String exp = need.get(need.size() - 1);
+        //hier kijk ik of wat er uit komt niet g0, g1, g2 is of iets dat niet eind bevat.
         assertNotEquals(g0, exp);
         assertNotEquals(g1, exp);
         assertNotEquals(g2, exp);
@@ -128,6 +128,7 @@ class NodeTest {
 
         ArrayList<String> need = g0.getFollow_2(g0);
         String exp = need.get(need.size() - 1);
+        //hier kijk ik of wat er uit komt niet g0, g1, g2 is of iets dat niet eind bevat.
         assertNotEquals(g0, exp);
         assertNotEquals(g1, exp);
         assertNotEquals(g2, exp);
