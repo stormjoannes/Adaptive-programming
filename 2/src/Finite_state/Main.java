@@ -26,21 +26,21 @@ public class  Main {
         System.out.println(s0.getFollow(s0, ToDo));
 
 
-        Fm2b.Node g0 = new Fm2b.Node("g0");
-        Fm2b.Node g1 = new Fm2b.Node("g1");
-        Fm2b.Node g2 = new Fm2b.Node("g2");
-        Fm2b.Node g3 = new Fm2b.Node("g3");
-        Fm2b.Node g4 = new Fm2b.Node("g4");
-        Fm2b.Node g5 = new Fm2b.Node("g5");
-        Fm2b.Node g6 = new Fm2b.Node("g6");
+        Node g0 = new Node("g0");
+        Node g1 = new Node("g1");
+        Node g2 = new Node("g2");
+        Node g3 = new Node("g3");
+        Node g4 = new Node("g4");
+        Node g5 = new Node("g5");
+        Node g6 = new Node("g6");
 //        Fm2a.Node g6 = new Node("s3");
 
-        Fm2b.Node e1 = new Fm2b.Node("eind-1");
-        Fm2b.Node e2 = new Fm2b.Node("eind-2");
-        Fm2b.Node e3 = new Fm2b.Node("eind-3");
-        Fm2b.Node e4 = new Fm2b.Node("eind-4");
-        Fm2b.Node e5 = new Fm2b.Node("eind-5");
-        Fm2b.Node e6 = new Fm2b.Node("eind-6");
+        Node e1 = new Node("eind-1");
+        Node e2 = new Node("eind-2");
+        Node e3 = new Node("eind-3");
+        Node e4 = new Node("eind-4");
+        Node e5 = new Node("eind-5");
+        Node e6 = new Node("eind-6");
 
         g0.setFollow_2(g1, g2);
         g1.setFollow_2(g3, g4);
