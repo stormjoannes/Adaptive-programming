@@ -50,9 +50,9 @@ public class Node {
 
         if (!Current.contains("eind")) {
             Random rand = new Random();
-            int randNum = rand.nextInt(Follows.size());
-            Node nxt = Follows.get(randNum);
-            Follows.get(randNum).getFollow_2(nxt, done, str_gedaan);
+            int nmr = rand.nextInt(Follows.size());
+            Node nxt = Follows.get(nmr);
+            Follows.get(nmr).getFollow_2(nxt, done, str_gedaan);
         } else {
             return done;
         }
