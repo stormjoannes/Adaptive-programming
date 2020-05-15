@@ -126,7 +126,6 @@ class NodeTest {
         g2.setFollow(e2);
 
         ArrayList<String> need = g0.getFollow_2(g0);
-//        System.out.println(need.get(need.size() - 1));
         String exp = need.get(need.size() - 1);
         assertNotEquals(g0, exp);
         assertNotEquals(g1, exp);
