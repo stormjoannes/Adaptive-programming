@@ -23,8 +23,8 @@ public class  Main {
         //input here
         ArrayList<Node> ToDo = new ArrayList<>();
         ToDo.add(s2);
-        ToDo.add(s3);
-        ToDo.add(s0);
+        ToDo.add(s1);
+        ToDo.add(s1);
         //till here
 
         System.out.println("A: " + s0.getFollow(s0, ToDo));
@@ -37,7 +37,6 @@ public class  Main {
         Node g4 = new Node("g4");
         Node g5 = new Node("g5");
         Node g6 = new Node("g6");
-//        Fm2a.Node g6 = new Node("s3");
 
         Node e1 = new Node("eind-1");
         Node e2 = new Node("eind-2");
@@ -58,12 +57,9 @@ public class  Main {
         g4.setFollow(e3);
         g5.setFollow(e4);
         g5.setFollow(e5);
-        g6.setFollow(e2);
+        g6.setFollow(g2);
         g6.setFollow(e6);
 
-
-//        g0.getFollow(g0);
         System.out.println("B: " + g0.getFollow_2(g0));
-
     }
 }

@@ -1,6 +1,7 @@
 package Finite_state;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Node {
     private String Current;
@@ -34,7 +35,6 @@ public class Node {
         return done;
     }
 
-
     public ArrayList<String> getFollow(Node at, ArrayList<Node> ToDo) {
         getFollow(at, ToDo, done, str_done);
         return str_done;
@@ -45,22 +45,15 @@ public class Node {
     }
 
 
-
-
-
     public ArrayList<Node> getFollow_2(Node Now, ArrayList<Node> done, ArrayList<String> str_gedaan) {
-        Double random = Math.random();
         done.add(Now);
         str_gedaan.add(Current);
 
         if (!Current.contains("eind")) {
-            if (random <= 0.5) {
-                Node nxt = Follows.get(0);
-                Follows.get(0).getFollow_2(nxt, done, str_gedaan);
-            } else {
-                Node nxt = Follows.get(1);
-                Follows.get(1).getFollow_2(nxt, done, str_gedaan);
-            }
+            Random rand = new Random();
+            int randNum = rand.nextInt(Follows.size());
+            Node nxt = Follows.get(randNum);
+            Follows.get(randNum).getFollow_2(nxt, done, str_gedaan);
         } else {
             return done;
         }
