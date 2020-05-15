@@ -1,9 +1,8 @@
-package Fm2a;
+package Finite_state;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class Main {
+public class  Main {
     public static void main(String[] arg) {
 
         Node s0 = new Node("s0");
