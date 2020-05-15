@@ -11,10 +11,14 @@ public class  Main {
         Node s3 = new Node("s3");
         Node None = new Node("None");
 
-        s0.setFollow(s2, s1);
-        s1.setFollow(s1, s2);
-        s2.setFollow(None, s3);
-        s3.setFollow(s3, s0);
+        s0.setFollow(s2);
+        s0.setFollow(s1);
+        s1.setFollow(s1);
+        s1.setFollow(s2);
+        s2.setFollow(None);
+        s2.setFollow(s3);
+        s3.setFollow(s3);
+        s3.setFollow(s0);
 
         //input here
         ArrayList<Node> ToDo = new ArrayList<>();
@@ -23,7 +27,7 @@ public class  Main {
         ToDo.add(s0);
         //till here
 
-        System.out.println(s0.getFollow(s0, ToDo));
+        System.out.println("A: " + s0.getFollow(s0, ToDo));
 
 
         Node g0 = new Node("g0");
@@ -42,16 +46,24 @@ public class  Main {
         Node e5 = new Node("eind-5");
         Node e6 = new Node("eind-6");
 
-        g0.setFollow_2(g1, g2);
-        g1.setFollow_2(g3, g4);
-        g2.setFollow_2(g5, g6);
-        g3.setFollow_2(g1, e1);
-        g4.setFollow_2(e2, e3);
-        g5.setFollow_2(e4, e5);
-        g6.setFollow_2(e2, e6);
+        g0.setFollow_2(g1);
+        g0.setFollow_2(g2);
+        g1.setFollow_2(g3);
+        g1.setFollow_2(g4);
+        g2.setFollow_2(g5);
+        g2.setFollow_2(g6);
+        g3.setFollow_2(g1);
+        g3.setFollow_2(e1);
+        g4.setFollow_2(e2);
+        g4.setFollow_2(e3);
+        g5.setFollow_2(e4);
+        g5.setFollow_2(e5);
+        g6.setFollow_2(e2);
+        g6.setFollow_2(e6);
+
 
 //        g0.getFollow(g0);
-        System.out.println(g0.getFollow_2(g0));
+        System.out.println("B: " + g0.getFollow_2(g0));
 
     }
 }

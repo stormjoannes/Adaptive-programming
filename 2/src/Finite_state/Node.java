@@ -4,14 +4,10 @@ import java.util.ArrayList;
 
 public class Node {
     private String Current;
-    private Node FollowA;
-    private Node FollowB;
     private ArrayList<Node> done = new ArrayList<>();
     private ArrayList<Node> Follows = new ArrayList<>();
     private ArrayList<String> str_done = new ArrayList<>();
 
-    private Node FowA;
-    private Node FowB;
     private ArrayList<Node> done_2 = new ArrayList<>();
     private ArrayList<Node> Follows_2 = new ArrayList<>();
     private ArrayList<String> str_gedaan = new ArrayList<>();
@@ -44,11 +40,8 @@ public class Node {
         return str_done;
     }
 
-    public void setFollow(Node flwA, Node flwB) {
-        this.FollowA = flwA;
-        this.FollowB = flwB;
-        Follows.add(FollowA);
-        Follows.add(FollowB);
+    public void setFollow(Node val_nd) {
+        Follows.add(val_nd);
     }
 
 
@@ -59,7 +52,6 @@ public class Node {
         Double random = Math.random();
         done.add(Now);
         str_gedaan.add(Current);
-        System.out.println(Current);
 
         if (!Current.contains("eind")) {
             if (random <= 0.5) {
@@ -80,10 +72,7 @@ public class Node {
         return str_gedaan;
     }
 
-    public void setFollow_2(Node flwA, Node flwB){
-        this.FowA = flwA;
-        this.FowB = flwB;
-        Follows_2.add(FowA);
-        Follows_2.add(FowB);
+    public void setFollow_2(Node val_nd_2){
+        Follows_2.add(val_nd_2);
     }
 }
