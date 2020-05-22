@@ -14,5 +14,10 @@ public class Main {
 
         opg_3 g_3_0 = new opg_3();
         System.out.println("Gesorteerde lijst: " + g_3_0.getSorted());
+
+        System.out.println("");
+
+        opg_4 g_4_0 = new opg_4();
+        System.out.println("Gesorteerde lijst: " + g_4_0.getSorted());
     }
 }
