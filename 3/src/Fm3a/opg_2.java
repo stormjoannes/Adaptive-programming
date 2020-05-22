@@ -24,10 +24,13 @@ public class opg_2 {
         }
         for (int i = 0; i < lengte_rand_list; i++) {
             int rand_letter_ind = rand.nextInt(alfabet.size());
-            while (rand_char.contains(alfabet.get(rand_letter_ind))) {
+            char side = alfabet.get(rand_letter_ind);
+            String tostring = String.valueOf(side);
+            while (rand_word.contains(tostring)) {
                 rand_letter_ind = rand.nextInt(alfabet.size());
+                tostring = String.valueOf(alfabet.get(rand_letter_ind));
             }
-            rand_word = rand_word + alfabet.get(rand_letter_ind);
+            rand_word = rand_word + tostring;
         }
         return rand_word;
     }
