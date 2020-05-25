@@ -55,7 +55,15 @@ public class Main {
         System.out.println(v0.getTransitions_vlucht());
         System.out.println(t0.getTransitions_treinrit());
 
+        Stap stap = new Stap();
+        stap.addNode(r0);
+        stap.addNode(r1);
+        stap.addNode(r2);
+        stap.addNode(r3);
+        stap.addNode(r4);
+        stap.addNode(r5);
 
-
+        System.out.println("");
+        System.out.println(stap.getRitten());
     }
 }
