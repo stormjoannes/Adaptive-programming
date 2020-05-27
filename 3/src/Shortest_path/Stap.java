@@ -1,19 +1,13 @@
 package Shortest_path;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Stap {
-    private Set<Rit> ritten = new HashSet<>();
+    private String soort;
 
-    public void addNode(Rit nodeA) {
-        ritten.add(nodeA);
+    public class Stap extends Node {
+
     }
 
-    public Set<Rit> getRitten() {
-        return ritten;
+    public String formule() {
+        if
     }
-
-
-    //getters and setters
 }
