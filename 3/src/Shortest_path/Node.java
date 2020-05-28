@@ -1,24 +1,42 @@
 package Shortest_path;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class Node {
-    private String node;
-    private HashMap<Node, Integer> transitions_node = new HashMap<>();
+    private String name;
+    private List<Node> shortestPath = new LinkedList<>();
+    private Integer distance = Integer.MAX_VALUE;
 
-    public Node(String nd) {
-        node = nd;
+    Map<Node, Integer> adjacentNodes = new HashMap<>();
+
+    public void addDestination(Node destination, int distance) {
+        adjacentNodes.put(destination, distance);
     }
 
-    public String getNode() {
-        return node;
+    public Node(String name) {
+        this.name = name;
     }
 
-    public void setTransitions_node (Node transitie, Integer km) {
-        transitions_node.put(transitie, km);
+    public void setDistance(Integer distance) {
+        this.distance = distance;
     }
 
-    public HashMap<Node, Integer> getTransitions_node () {
-        return transitions_node;
+    public Integer getDistance() {
+        return distance;
+    }
+
+    public Map<Node, Integer> getAdjacentNodes() {
+        return adjacentNodes;
+    }
+
+    public List<Node> getShortestPath() {
+        return shortestPath;
+    }
+
+    public void setShortestPath(List<Node> shortestPath) {
+        this.shortestPath = shortestPath;
     }
 }

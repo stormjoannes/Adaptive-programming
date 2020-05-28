@@ -1,20 +1,14 @@
 package Shortest_path;
 
-import java.util.*;
+public class Rit extends Stap {
+    private int KM;
 
-public class Rit {
-    private String rit;
-    private HashMap<Rit, Integer> transitions_rit = new HashMap<>();
-
-    public Rit(String rt) {
-        rit = rt;
+    public Rit(Node cls, int akm) {
+        this.KM = akm;
+        this.eind = cls;
     }
 
-    public void setTransitions_rit (Rit transitie, Integer km) {
-        transitions_rit.put(transitie, km);
-    }
-
-    public HashMap<Rit, Integer> getTransitions_rit () {
-        return transitions_rit;
+    public String toString() {
+        return "afstand km: " + KM;
     }
 }
