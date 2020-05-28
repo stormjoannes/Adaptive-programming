@@ -52,8 +52,8 @@ public class Graph {
         if (sourceDistance + edgeWeigh < evaluationNode.getDistance()) {
             evaluationNode.setDistance(sourceDistance + edgeWeigh);
             LinkedList<Node> shortestPath = new LinkedList<>(sourceNode.getShortestPath());
-            ArrayList<String> done = new ArrayList<>();
             shortestPath.add(sourceNode);
+
             evaluationNode.setShortestPath(shortestPath);
         }
     }

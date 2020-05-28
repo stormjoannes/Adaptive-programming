@@ -20,6 +20,10 @@ public class Node {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setDistance(Integer distance) {
         this.distance = distance;
     }
